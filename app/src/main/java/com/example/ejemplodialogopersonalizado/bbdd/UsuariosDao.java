@@ -31,5 +31,8 @@ public interface UsuariosDao
     @Query("SELECT * FROM Usuario WHERE id = :id")
     Usuario loadUsuarioById(int id);
 
+    @Query("SELECT * FROM Usuario WHERE usuario = :usu AND password = :pass")
+    Usuario loadUsuarioByNamePass (String usu, String pass);
+
 
 }
