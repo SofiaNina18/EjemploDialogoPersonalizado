@@ -22,4 +22,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Acceder" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Register"
+        android:id="@+id/btnRegistro"/>
 </LinearLayout>
