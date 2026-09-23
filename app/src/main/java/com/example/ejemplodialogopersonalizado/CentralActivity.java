@@ -13,7 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class CentralActivity extends AppCompatActivity {
 
-    private Button btnSensores, btnCamara;
+    private Button btnSensores, btnCamara, btnVoz, btnWeb;
 
 
     @Override
@@ -44,6 +44,19 @@ public class CentralActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+        btnVoz = findViewById(R.id.btnVoz);
+        btnVoz.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), VozActivity.class));
+            }
+        });
+
+
+
     }
 }
 
